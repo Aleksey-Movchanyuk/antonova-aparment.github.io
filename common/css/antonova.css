@@ -30,7 +30,7 @@ body {
 
 .panel-cover {
     padding: 15px 0px 15px 0px;
-    background: url(../../media/images/012.JPG) 0 0 no-repeat;
+    background: url(../../media/images/012.jpg) 0 0 no-repeat;
     clear: both;
     position: relative;
     background-size: cover;
@@ -56,6 +56,13 @@ body {
     font: 16px 'Lato-Light', Arial, sans-serif;
     color: #999
 }
+
+.section-panorama {
+    padding: 10px 0px 10px 30px;
+    font: 16px 'Lato-Light', Arial, sans-serif;
+    color: #999
+}
+
 
 .txt1 {
     position: relative;
@@ -204,4 +211,9 @@ body {
 
 .demo-gallery.dark > ul > li a {
   border: 3px solid #04070a;
+}
+
+#panorama {
+        width: 600px;
+        height: 400px;
 }
