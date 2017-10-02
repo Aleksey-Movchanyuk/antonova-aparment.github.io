@@ -63,6 +63,12 @@ h2 span{
     color: #999
 }
 
+.section-location {
+    padding: 10px 0px 10px 30px;
+    font: 16px 'Lato-Light', Arial, sans-serif;
+    color: #999
+}
+
 .section-panorama {
     padding: 10px 0px 10px 30px;
     font: 16px 'Lato-Light', Arial, sans-serif;
@@ -236,4 +242,9 @@ h2 span{
 #panorama {
         width: 600px;
         height: 400px;
+}
+
+#map {
+        width: 100%;
+        height: 350px;
 }
