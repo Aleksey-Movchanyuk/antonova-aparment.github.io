@@ -63,6 +63,12 @@ body {
     color: #999
 }
 
+.section-contact-us {
+  padding: 10px 0px 10px 30px;
+  font: 16px 'Lato-Light', Arial, sans-serif;
+  color: #999
+}
+
 
 .txt1 {
     position: relative;
@@ -80,6 +86,17 @@ body {
     position: relative;
     font: 35px 'Lato-Light', Arial, sans-serif;
     color: #556B2F;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #556B2F;
+  border-color: #556B2F;
+}
+
+.btn-success:hover {
+  background-color: #556B2F;
+  border-color: #556B2F;
 }
 
 
