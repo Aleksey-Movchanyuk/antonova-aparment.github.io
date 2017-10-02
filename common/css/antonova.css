@@ -16,7 +16,13 @@ body {
     background-color: #777;
 }
 
+h1 span{
+  background-color: rgba(85,107,47,0.5);
+}
 
+h2 span{
+  background-color: rgba(85,107,47,0.5);
+}
 
 .panel-default {
     background-color: #fff;
