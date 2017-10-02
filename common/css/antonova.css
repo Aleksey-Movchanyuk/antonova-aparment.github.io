@@ -77,19 +77,16 @@ h2 span{
 
 
 .txt1 {
-    position: relative;
     font: bold 55px 'Lato-Light', Arial, sans-serif;
     color: #fff;
 }
 
 .txt2 {
-    position: relative;
     font: 20px 'Lato-Light', Arial, sans-serif;
     color: #fff;
 }
 
 .txt3 {
-    position: relative;
     font: 35px 'Lato-Light', Arial, sans-serif;
     color: #556B2F;
 }
