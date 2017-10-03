@@ -81,6 +81,11 @@ h2 span{
   color: #999
 }
 
+.section-facebook-integration {
+  padding: 10px 0px 10px 30px;
+  font: 16px 'Lato-Light', Arial, sans-serif;
+  color: #999
+}
 
 .txt1 {
     font: bold 55px 'Lato-Light', Arial, sans-serif;
