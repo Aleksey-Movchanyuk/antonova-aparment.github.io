@@ -22,8 +22,9 @@
         <!-- Lightgallery -->
         <link rel="stylesheet" href="assets/lightgallery/lightgallery-1.0.1/css/lightgallery.css">
 
-        <!-- Pannellum -->
-        <script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+        <!-- jQuery Panorama Viewer -->
+        <script type="text/javascript" src="assets/jQuery-Panorama-Viewer/jQuery-Panorama-Viewer-2.0/jquery.panorama_viewer.js"></script>
+        <link href="assets/jQuery-Panorama-Viewer/jQuery-Panorama-Viewer-2.0/panorama_viewer.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
         <link href="common/css/antonova.css" rel="stylesheet">
@@ -103,7 +104,7 @@
                     <div class="col-md-4">
                         <h4>Характеристики квартиры:</h4>
                         <ul>
-                            <li>Общая площадь 38.1 кв.м (из них утепленный балкон 2 кв.м)</li>
+                            <li>Общая площадь 38.6 кв.м (из них утепленный балкон 3.5 кв.м)</li>
                             <li>4 этаж, 9ти этажного дома, есть лифт</li>
                             <li>Продается со встроенной мебелью</li>
                             <li>Кухня студия</li>
@@ -292,18 +293,54 @@
                 </div-->
 
                 <!--div class="section-panorama">
-                    <h4>Панорамное фото:</h4>
-                    <div id="panorama"></div>
+                    <h4>Панорамные фото:</h4>
+                    <div class="panorama">
+                        <img src="media/images/051-panorama.jpg">
+                    </div>
                     <script>
-                    pannellum.viewer('panorama', {
-                        "type": "equirectangular",
-                        "panorama": "https://pannellum.org/images/alma.jpg"
-                    });
+                        $(".panorama").panorama_viewer({
+                            repeat: false,              // The image will repeat when the user scroll reach the bounding box. The default value is false.
+                            direction: "horizontal",    // Let you define the direction of the scroll. Acceptable values are "horizontal" and "vertical". The default value is horizontal
+                            animationTime: 700,         // This allows you to set the easing time when the image is being dragged. Set this to 0 to make it instant. The default value is 700.
+                            easing: "ease-out",         // You can define the easing options here. This option accepts CSS easing options. Available options are "ease", "linear", "ease-in", "ease-out", "ease-in-out", and "cubic-bezier(...))". The default value is "ease-out".
+                            overlay: true               // Toggle this to false to hide the initial instruction overlay
+                        });
                     </script>
                 </div-->
 
+                <div class="section-location" >
+                    <h2 class="txt3">Квартира расположена в самом центре города, в 5 минутах ходьбы от центральной площади и мэрии</h2>
+
+                    <div class="map-wrap">
+                        <div class="map" id="map" style="position: relative; overflow: hidden;">
+
+                        </div>
+                            <div class="map-address-wrap">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="map-note">
+                                                <div class="title">Вся инфраструктура в пешей доступности:</div>
+                                                <ul>
+                                                    <li>200 м. до ж/д вокзала</li>
+                                                    <li>150 м. до остановки маршрутки на Киев</li>
+                                                    <li>200 м. до супермаркетов «Фуршет», «АТБ»</li>
+                                                    <li>150 м. до отделения «Новой Почты»</li>
+                                                    <li>50 м. до аптеки «Доброго Дня»</li>
+                                                    <li>400 м. до торгового центра «Irpin City»</li>
+                                                    <li>1000 м. до тренажерного зала «Тонус»</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section-contact-us" >
-                    <h2 class="txt3">Свяжитесь с нами</h2>
+                    <h2 class="txt3">Записаться на просмотр</h2>
                     
                     <div class="col-md-8" style="padding-left: 0px;">
                        <div class="alert alert-info" role="alert" style="display:none;" id="thankyou_message">
@@ -320,10 +357,10 @@
                              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                              <input type="text" class="form-control" name="name" id="name" value="" placeholder="Ваше имя">
                           </div>
-                          <div style="margin-bottom: 25px" class="input-group">
+                          <!--div style="margin-bottom: 25px" class="input-group">
                              <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
                              <input type="text" class="form-control" name="subject" id="subject" value="" placeholder="Тема сообщения">
-                          </div>
+                          </div-->
                           <div style="margin-bottom: 25px" class="input-group">
                              <textarea rows="3" cols="100" class="form-control" id="message" name="message" id="message" placeholder="Текст сообщения"></textarea>
                           </div>
