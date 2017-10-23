@@ -259,11 +259,12 @@ h2 span{
     line-height: 1.2;
     position: absolute;
     top: -375px;
-    right: 5px;
+    right: 55px;
     width: 310px;
     height: 340px;
     padding: 35px 35px 35px 35px;
     color: #fff;
     background-color: #556B2F;
+    opacity: 0.9;
 }
 
