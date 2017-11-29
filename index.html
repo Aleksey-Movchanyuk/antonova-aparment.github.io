@@ -26,6 +26,22 @@
         <script type="text/javascript" src="assets/jQuery-Panorama-Viewer/jQuery-Panorama-Viewer-2.0/jquery.panorama_viewer.js"></script>
         <link href="assets/jQuery-Panorama-Viewer/jQuery-Panorama-Viewer-2.0/panorama_viewer.css" rel="stylesheet">
 
+		<!-- fullPage -->
+        <link href="assets/fullPage/fullPage-2.9.5/jquery.fullPage.css" rel="stylesheet">
+        <script type="text/javascript" src="assets/fullPage/fullPage-2.9.5/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="assets/iScroll/iScroll-5.2.0/scrolloverflow.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['section-cover', 'section-photo', 'section-location', 'section-contact-us'],
+					//sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F'],
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['Обложка', 'Фотогалерея', 'Карта', 'Контакты']
+				});
+			});
+		</script>
+		
         <!-- Custom styles for this template -->
         <link href="common/css/antonova.css" rel="stylesheet">
 
@@ -88,19 +104,27 @@
         </script>
 
 
-        <div class="panel-default">
-            <div class="panel-cover">
-                <div class="cover-section-header">
-                    <h1 class="txt1"><span>Уютная квартира в самом <b>центре</b> Ирпеня<br /> всего за <b>$28'500</b><br /> возможна <b>рассрочка на год</b></span></h1>
-                    <h2 class="txt2"><span>Ремонт делался с использованием максимально натуральных, дорогих, качественных и главное экологичных материалов</span></h2>
-                </div>
-            </div>
-            <div class="panel-body">
-                <div class="section-header-left">
-                    <h2 class="txt3">Мебель изготовлена под заказ, по индивидуальному проекту под данную квартиру для рационального использования пространства</h2>
-                </div>
 
-                <div class="section-photo">
+
+            <div id="fullpage" class="panel-body">
+				
+				<div class="section-cover section" id="section0">
+					<h1 class="txt1"><span>Уютная квартира в самом <b>центре</b> Ирпеня<br /> всего за <b>$28'500</b><br /> возможна <b>рассрочка на год</b></span></h1>
+					<h2 class="txt2"><span>Ремонт делался с использованием максимально натуральных, дорогих, качественных и главное экологичных материалов</span></h2>
+				</div>
+
+                <div class="section-photo section" id="section1">
+				
+					<div class="row">
+						<div class="col-md-6">
+							<div class="section-header-left">
+								<h2 class="txt3">Мебель изготовлена под заказ, по индивидуальному проекту под данную квартиру для максимально рационального использования пространства</h2>
+							</div>
+						</div>
+						<div class="col-md-6"></div>
+					</div>
+
+				
                     <div class="col-md-4">
                         <h4>Характеристики квартиры:</h4>
                         <ul>
@@ -258,40 +282,6 @@
                     </div>
                 </div>
 
-                <!--div class="section-location">
-                    <div class="col-md-4">
-                        <h4>Расположение квартиры:</h4>
-                        <ul>
-                            <li>200 м. до ж/д вокзала</li>
-                            <li>150 м. до остановки маршруток на Киев (Академгородок, Оболонь)</li>
-                            <li>50 м. до аптеки</li>
-                            <li>200 м. до супермаркетов «АТБ», «Фуршет»</li>
-                            <li>150 м. до отделения «Новой Почты»</li>
-                            <li>1000 м. до тренажерного зала «Тонус»</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8">
-                        <div id="map"></div>
-                        <script>
-                            function initMap() {
-                                var uluru = {lat: -25.363, lng: 131.044};
-                                var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 4,
-                                center: uluru
-                                });
-                                var marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map
-                                });
-                            }
-                        </script>
-                        <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfo50g0Oqdq6E4H44VOskdbL4dBcKhza0&callback=initMap">
-                        </script>
-                    </div>
-
-                </div-->
-
                 <!--div class="section-panorama">
                     <h4>Панорамные фото:</h4>
                     <div class="panorama">
@@ -308,117 +298,144 @@
                     </script>
                 </div-->
 
-                <div class="section-location" >
-                    <h2 class="txt3">Квартира расположена в самом центре города, в 5 минутах ходьбы от центральной площади и мэрии</h2>
+                <div class="section-location section" id="section2" >
+				
+					<div class="row">
+						<div class="col-md-6">
+							<div class="section-header-left">
+								<h2 class="txt3">Квартира расположена в самом центре города, в 5 минутах ходьбы от центральной площади и мэрии</h2>
+							</div>
+						</div>
+						<div class="col-md-6">
+						</div>
+					</div>				
+                    
 
-                    <div class="map-wrap">
-                        <div class="map" id="map" style="position: relative; overflow: hidden;">
-
-                        </div>
-                            <div class="map-address-wrap">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="map-note">
-                                                <div class="title">Вся инфраструктура в пешей доступности:</div>
-                                                <ul>
-                                                    <li>200 м. до ж/д вокзала</li>
-                                                    <li>150 м. до остановки маршрутки на Киев</li>
-                                                    <li>200 м. до супермаркетов «Фуршет», «АТБ»</li>
-                                                    <li>150 м. до отделения «Новой Почты»</li>
-                                                    <li>50 м. до аптеки «Доброго Дня»</li>
-                                                    <li>400 м. до торгового центра «Irpin City»</li>
-                                                    <li>1000 м. до тренажерного зала «Тонус»</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row">
+						<div class="col-md-8">
+						    <div class="map-wrap">
+								<div class="map" id="map" style="position: relative; overflow: hidden;"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h4>Вся инфраструктура в пешей доступности:</h4>
+							<ul>
+                                <li>200 м. до ж/д вокзала</li>
+                                <li>150 м. до остановки маршрутки на Киев</li>
+                                <li>200 м. до супермаркетов «Фуршет», «АТБ»</li>
+                                <li>150 м. до отделения «Новой Почты»</li>
+                                <li>50 м. до аптеки «Доброго Дня»</li>
+                                <li>400 м. до торгового центра «Irpin City»</li>
+                                <li>1000 м. до тренажерного зала «Тонус»</li>
+							</ul>
+						</div>
+					</div>
+					
                 </div>
 
-                <div class="section-contact-us" >
-                    <h2 class="txt3">Записаться на просмотр</h2>
+
+                <div class="section-contact-us section" id="section3" >
+				
+					<div class="row">
+						<div class="col-md-6">
+							<div class="section-header-left">
+								<h2 class="txt3">Записаться на просмотр</h2>
+							</div>
+						</div>
+						<div class="col-md-6"></div>
+					</div>
                     
-                    <div class="col-md-8" style="padding-left: 0px;">
-                       <div class="alert alert-info" role="alert" style="display:none;" id="thankyou_message">
-                            Спасибо что обратились к нами !
-                              Мы свяжемся с вами в ближайшее время !
-                       </div>
+                    <div class="row">
+						<div class="col-md-6">
+						
+							<div style="width:100%">
+							
+								<div class="col-md-8" style="padding-left: 0px;">
+								   <div class="alert alert-info" role="alert" style="display:none;" id="thankyou_message">
+										Спасибо что обратились к нами !
+										  Мы свяжемся с вами в ближайшее время !
+								   </div>
 
-                       <form id="gform" class="form-horizontal" role="form" action="https://script.google.com/macros/s/AKfycbyyLQT2KRdKmvTWamFgVSoiFe-990Ytaz5XD-IMzDoWsv07jeX5/exec" method="post" >
-                          <div style="margin-bottom: 25px" class="input-group">
-                             <span class="input-group-addon" id="basic-addon1">@</span>
-                             <input type="text" class="form-control" name="email" id="email" placeholder="Ваш email" aria-describedby="basic-addon1">
-                          </div>
-                          <div style="margin-bottom: 25px" class="input-group">
-                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                             <input type="text" class="form-control" name="name" id="name" value="" placeholder="Ваше имя">
-                          </div>
-                          <!--div style="margin-bottom: 25px" class="input-group">
-                             <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
-                             <input type="text" class="form-control" name="subject" id="subject" value="" placeholder="Тема сообщения">
-                          </div-->
-                          <div style="margin-bottom: 25px" class="input-group">
-                             <textarea rows="3" cols="100" class="form-control" id="message" name="message" id="message" placeholder="Текст сообщения"></textarea>
-                          </div>
-                          <div style="margin-top:10px" class="form-group">
-                             <!-- Button -->
-                             <div class="col-sm-12 controls">
-                                <input type="submit" class="btn btn-success" value="Отправить сообщение">
-                             </div>
-                          </div>
-                       </form>
-                    </div>
+								   <form id="gform" class="form-horizontal" role="form" action="https://script.google.com/macros/s/AKfycbyyLQT2KRdKmvTWamFgVSoiFe-990Ytaz5XD-IMzDoWsv07jeX5/exec" method="post" >
+									  <div style="margin-bottom: 25px" class="input-group">
+										 <span class="input-group-addon" id="basic-addon1">@</span>
+										 <input type="text" class="form-control" name="email" id="email" placeholder="Ваш email" aria-describedby="basic-addon1">
+									  </div>
+									  <div style="margin-bottom: 25px" class="input-group">
+										 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										 <input type="text" class="form-control" name="name" id="name" value="" placeholder="Ваше имя">
+									  </div>
+									  <!--div style="margin-bottom: 25px" class="input-group">
+										 <span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
+										 <input type="text" class="form-control" name="subject" id="subject" value="" placeholder="Тема сообщения">
+									  </div-->
+									  <div style="margin-bottom: 25px" class="input-group">
+										 <textarea rows="3" cols="100" class="form-control" id="message" name="message" id="message" placeholder="Текст сообщения"></textarea>
+									  </div>
+									  <div style="margin-top:10px" class="form-group">
+										 <!-- Button -->
+										 <div class="col-sm-12 controls">
+											<input type="submit" class="btn btn-success" value="Отправить сообщение">
+										 </div>
+									  </div>
+								   </form>
+								</div>
+								
+							</div>
 
-                    <div class="col-md-4" style="padding-left: 0px; padding-top: 0px;">
-                        <div class="panel-body business-card">
-                           <p class="text-muted">
-                              <strong style="font: 28px/28px">Алексей</strong><br><br>
-                           <table>
-                              <tbody>
-                                 <tr>
-                                    <td><i class="glyphicon glyphicon-map-marker"></i></td>
-                                    <td>&nbsp;</td>
-                                    <td>Антонова, 8а<br>Ирпень, Киевская область</td>
-                                 </tr>
-                                 <tr>
-                                    <td><br></td>
-                                 </tr>
-                                 <tr>
-                                    <td><i class="glyphicon glyphicon-earphone"></i></td>
-                                    <td>&nbsp;</td>
-                                    <td>+38 (097) 142-0001</td>
-                                 </tr>
-                                 <tr>
-                                    <td><br></td>
-                                 </tr>
+						</div>
+						<div class="col-md-6">
+						
+							<div class="col-md-4" style="padding-left: 0px; padding-top: 0px;">
+								<div class="panel-body business-card">
+									<p class="text-muted">
+										<strong style="font: 28px/28px">Алексей</strong><br><br>
+										<table>
+											<tbody>
+												<tr>
+													<td><i class="glyphicon glyphicon-map-marker"></i></td>
+													<td>&nbsp;</td>
+													<td>Антонова, 8а<br>Ирпень, Киевская область</td>
+												</tr>
+												<tr>
+													<td><br></td>
+												</tr>
+												<tr>
+													<td><i class="glyphicon glyphicon-earphone"></i></td>
+													<td>&nbsp;</td>
+													<td>+38 (097) 142-0001</td>
+												</tr>
+												<tr>
+													<td><br></td>
+												</tr>
 
-                                 <!--tr>
-                                    <td><i class="glyphicon glyphicon-envelope"></i></td>
-                                    <td>&nbsp;</td>
-                                    <td>info@fintech-consulting.pro</td>
-                                 </tr-->
+												<!--tr>
+													<td><i class="glyphicon glyphicon-envelope"></i></td>
+													<td>&nbsp;</td>
+													<td>info@fintech-consulting.pro</td>
+												</tr-->
 
-                              </tbody>
-                           </table>
+											</tbody>
+										</table>
 
-                           <div
-                                class="fb-like"
-                                data-share="true"
-                                data-width="450"
-                                data-show-faces="true">
-                           </div>
+										<div
+											class="fb-like"
+											data-share="true"
+											data-width="450"
+											data-show-faces="true">
+										</div>
 
-                           </p>
-                        </div>
-                    </div>
+									</p>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+					
                 </div>
 
             </div>
-        </div>
+
 
 
 

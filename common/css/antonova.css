@@ -13,7 +13,7 @@
 
 
 body {
-    background-color: #777;
+    background-color: #fffff;
 }
 
 h1 span{
@@ -22,6 +22,10 @@ h1 span{
 
 h2 span{
   background-color: rgba(85,107,47,0.5);
+}
+
+.panel-body {
+	padding: 0px!important;
 }
 
 .panel-default {
@@ -34,8 +38,8 @@ h2 span{
     box-shadow: 0px 0px 15px #333;
 }
 
-.panel-cover {
-    padding: 15px 0px 15px 0px;
+.section-cover {
+    padding: 15px 15px 15px 15px;
     background: url(../../media/images/cover.jpg) 0 0 no-repeat;
     clear: both;
     position: relative;
@@ -43,48 +47,43 @@ h2 span{
     /* top: -33px; */
 }
 
-.panel-body {
-    padding: 15px;
-}
-
-.cover-section-header {
-    padding: 180px 0px 230px 20px;
-}
-
-.section-header-left {
-    padding: 15px 5px 0px 10px;
-    /* border-style: solid; */
-    border-left: thick solid #EEE8AA;
-}
 
 .section-photo {
-    padding: 10px 0px 10px 30px;
+    padding: 0px 30px 0px 30px;
     font: 16px 'Lato-Light', Arial, sans-serif;
     color: #999
 }
 
 .section-location {
-    padding: 10px 0px 10px 30px;
+    padding: 0px 30px 0px 30px;
     font: 16px 'Lato-Light', Arial, sans-serif;
     color: #999
 }
 
 .section-panorama {
-    padding: 10px 0px 10px 30px;
+    padding: 0px 30px 0px 30px;
     font: 16px 'Lato-Light', Arial, sans-serif;
     color: #999
 }
 
 .section-contact-us {
-  padding: 10px 0px 10px 30px;
+  padding: 0px 30px 0px 30px;
   font: 16px 'Lato-Light', Arial, sans-serif;
   color: #999
 }
 
 .section-facebook-integration {
-  padding: 10px 0px 10px 30px;
+  padding: 0px 30px 0px 30px;
   font: 16px 'Lato-Light', Arial, sans-serif;
   color: #999
+}
+
+.section-header-left {
+	text-align: left;
+}
+
+.section-header-right {
+	text-align: right;
 }
 
 .txt1 {
@@ -100,6 +99,7 @@ h2 span{
 .txt3 {
     font: 35px 'Lato-Light', Arial, sans-serif;
     color: #556B2F;
+	padding-bottom: 45px;
 }
 
 .btn-success {
